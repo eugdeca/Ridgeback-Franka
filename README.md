@@ -1,4 +1,4 @@
-# 🚀 Perceptive Mobile Manipulation: Asymmetric Reinforcement Learning for Franka-Ridgeback
+# Perceptive Mobile Manipulation: Asymmetric Reinforcement Learning for Franka-Ridgeback
 
 ![NVIDIA Isaac Sim](https://img.shields.io/badge/Simulation-NVIDIA%20Isaac%20Sim-76B900?logo=nvidia)
 ![Isaac Lab](https://img.shields.io/badge/Framework-Isaac%20Lab-blue)
@@ -11,7 +11,7 @@ The project demonstrates how to overcome the high-dimensionality challenges of v
 
 ---
 
-## 🎥 Final Result in Action
+## Final Result in Action
 
 
 https://github.com/user-attachments/assets/4b9f05a8-8dfc-40b5-8446-ca91c8eb0fce
@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/4b9f05a8-8dfc-40b5-8446-ca91c8eb0fce
 
 ---
 
-## 🌟 Key Achievements & Selling Points
+## Key Achievements & Selling Points
 
 Based on extensive training and evaluation, our final policy achieved remarkable robustness and realism:
 
@@ -39,7 +39,7 @@ To ensure stable convergence, the agent was trained using a highly optimized, st
 
 ---
 
-## 🧠 System Architecture
+## System Architecture
 
 * **Robot setup:** Franka Emika Panda (7-DoF Arm + Gripper) mounted on an Omnidirectional Base (3-DoF: Prismatic X, Prismatic Y, Revolute Z).
 * **Environment:** built on NVIDIA Isaac Lab.
@@ -48,7 +48,7 @@ To ensure stable convergence, the agent was trained using a highly optimized, st
   * *Critic:* full privileged state.
 * **Algorithm:** Proximal Policy Optimization (PPO).
 
-## 📦 Setup & Usage
+## Setup & Usage
 
 To use this environment, simply extract the `Collected_ridgeback_franka.zip` archive directly inside the main task folder. This will correctly unpack and link all the required 3D USD assets and textures for the simulation.
 
