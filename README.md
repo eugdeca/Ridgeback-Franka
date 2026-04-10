@@ -29,7 +29,7 @@ Based on extensive training and evaluation, our final policy achieved remarkable
 Standard Multi-Layer Perceptrons (MLPs) often collapse when handling high-dimensional visual data. While CNN Distillation showed promise, it inherited sub-optimal behaviors from the Teacher. Our final **Asymmetric Actor-Critic approach** completely bypassed these issues. 
 * **The Critic** leverages privileged information (exact state and cube poses) to guide the learning process.
 * **The Actor** relies strictly on deployable sensory data (CNN-processed depth images + proprioception).
-* **Result:** A highly robust policy that seamlessly adapts to dynamic environments and curriculum changes.
+* **Result:** a highly robust policy that seamlessly adapts to dynamic environments and curriculum changes.
 
 ### 2. Sim-to-Real Readiness
 A major challenge in RL is generating realistic motions. By integrating strict **Kinematic Constraints** into the reward shaping (penalizing high joint velocities), the trained policy completely avoids erratic and "jerky" movements. The resulting trajectories are smooth, realistic, and strictly adhere to the hardware limits of the real Franka robot, making the policy structurally ready for real-world transfer.
@@ -42,9 +42,10 @@ To ensure stable convergence, the agent was trained using a highly optimized, st
 ## 🧠 System Architecture
 
 * **Robot setup:** Franka Emika Panda (7-DoF Arm + Gripper) mounted on an Omnidirectional Base (3-DoF: Prismatic X, Prismatic Y, Revolute Z).
-* **Environment:** Built on NVIDIA Isaac Lab.
-* **Observation Space:** * *Actor:* Proprioceptive data (joint positions/velocities) + Depth Vision (processed via Convolutional Neural Network).
-  * *Critic:* Full privileged state.
+* **Environment:** built on NVIDIA Isaac Lab.
+* **Observation Space:**
+  * *Actor:* proprioceptive data (joint positions/velocities) + Depth Vision (processed via Convolutional Neural Network).
+  * *Critic:* full privileged state.
 * **Algorithm:** Proximal Policy Optimization (PPO).
 
 ## 📦 Setup & Usage
